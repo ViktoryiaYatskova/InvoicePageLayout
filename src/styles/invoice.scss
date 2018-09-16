@@ -1,0 +1,21 @@
+.message-body {
+  display: flex;
+}
+
+.rider-photo {
+  flex-shrink: 0;
+  margin-right: 20px;
+
+  width: $photo-size;
+  height: $photo-size;
+
+  border-radius: 50% 50%;
+}
+
+.signature {
+  color: $small-text-colour;
+
+  &::before {
+    content: '- ';
+  }
+}

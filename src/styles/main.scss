@@ -1,0 +1,82 @@
+// Palette
+$extra-dark: #363636;
+$dark: #414141;
+$light-grey: #989898;
+
+// Text
+$header-text-colour: $extra-dark;
+$main-text-colour: $dark;
+$small-text-colour: $light-grey;
+
+$header-font-family: Helvetica, sans-serif;
+$text-font-family: Helvetica, sans-serif;
+
+$main-text-size: 15px;
+$header-text-size: 36px;
+
+$background-colour: #ededed;
+$block-background-colour: #ffffff;
+$photo-size: 100px;
+
+$logo-height-tablet: 19px;
+
+body {
+  margin: 0;
+  background-color: $background-colour;
+}
+
+h1 {
+  font-size: $header-text-size;
+  color: $header-text-colour;
+}
+
+.logo {
+  display: inline-block;
+  height: $logo-height-tablet;
+
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .logo-inner {
+    fill: $extra-dark;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+header {
+  position: relative;
+  height: 78px;
+}
+
+.blocks-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 25px;
+
+  .block {
+    margin-bottom: 25px;
+    padding: 30px;
+
+    border-radius: 10px 10px;
+    background-color: $block-background-colour;
+
+    font-family: $text-font-family;
+    font-size: $main-text-size;
+    color: $main-text-colour;
+    line-height: 1.3;
+
+    h1, h2, h3 {
+      margin-top: 0;
+      font-family: $header-font-family;
+    }
+  }
+}
